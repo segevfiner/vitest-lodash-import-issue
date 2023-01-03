@@ -1,0 +1,29 @@
+{
+  "name": "foo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "author": "Segev Finer <segev@swimm.io>",
+  "license": "Unlicense",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "16",
+    "tsup": "^6.5.0",
+    "typescript": "~4.7.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
